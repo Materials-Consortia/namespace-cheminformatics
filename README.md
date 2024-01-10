@@ -1,19 +1,18 @@
-# definition-provider-template
+# namespace-cheminformatics
 
-Template repository for definition providers.
+Repository for the cheminformatics namespace. 
+**Note: this is presently used only to work out an explicit example of a defintion-provider namespace and is to be regarded as extremely experimental**
 
 1. Clone this repo (with submodules for tools)
    ```
-   git clone --recurse-submodules https://github.com/Materials-Consortia/definition-provider-template.git
+   git clone --recurse-submodules https://github.com/Materials-Consortia/namespace-cheminformatics.git
    ```
 
-2. Modify schemas in `src/`.
-
-3. Run make.
+2. Run make.
 
 4. Output appears in `output/`, check the standards document with, e.g.:
    ```
-   firefox output/v0.1.0/standards/smell
+   firefox output/v0.1.0/standards/cheminformatics
    ```
 
 Notes:
