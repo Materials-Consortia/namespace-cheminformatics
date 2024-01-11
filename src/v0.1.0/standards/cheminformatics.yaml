@@ -1,13 +1,13 @@
 $$schema: "https://schemas.optimade.org/meta/v1.2/optimade/standard_definition"
-$id: "https://example.org/schemas/v0.1/standards/smell"
-title: "Definition provider smell standard"
-description: "Definition provider smell standard"
+$id: "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/standards/cheminformatics"
+title: "Definition provider cheminformatics  standard"
+description: "Definition provider cheminformatics  standard"
 x-optimade-definition:
-  label: "smell_standard"
+  label: "cheminformatics_standard"
   kind: "standard"
   format: "1.2"
   version: "0.1.0"
-  name: "smell"
+  name: "cheminformatics"
 entrytypes:
   structures:
     $$inherit: "/entrytypes/structures"

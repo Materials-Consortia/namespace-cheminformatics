@@ -14,7 +14,7 @@ PROCESS_SCHEMAS=tools/optimade-property-tools/bin/process_schemas
 # Path to the OPTIMADE specification schemas folder
 OPTIMADE_SCHEMAS_DIR=../OPTIMADE/schemas/output
 # The base of the URI for the generated property definitions
-BASEID=https://example.org/schemas/v0.1/
+BASEID=https://schemas.optimade.org/namespaces/cheminformatics/v0.1/
 # The versioned directory being processed
 BASEDIR=src/v0.1.0
 
