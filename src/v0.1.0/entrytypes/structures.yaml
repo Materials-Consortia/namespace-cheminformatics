@@ -24,3 +24,11 @@ properties:
       sortable: true
       query-support: "all mandatory"
       response-level: "yes"
+
+  inchikey:
+    $$inherit: "/properties/structures/inchikey"
+    x-optimade-implementation:
+      support: "yes"
+      sortable: true
+      query-support: "all mandatory"
+      response-level: "yes"
