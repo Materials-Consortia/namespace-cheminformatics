@@ -25,8 +25,8 @@ properties:
       query-support: "all mandatory"
       response-level: "yes"
 
-  inchikey:
-    $$inherit: "/properties/structures/inchikey"
+  _cheminfo_inchikey:
+    $$inherit: "/properties/structures/_cheminfo_inchikey"
     x-optimade-implementation:
       support: "may"
       sortable: false
