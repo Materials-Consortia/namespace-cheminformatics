@@ -31,4 +31,4 @@ properties:
       support: "may"
       sortable: false
       query-support: "none"
-      response-level: "may"
+      response-level: "yes"
