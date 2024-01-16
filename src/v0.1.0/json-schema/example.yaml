@@ -1,9 +1,0 @@
-$schema: "https://json-schema.org/draft/2020-12/schema"
-$id: "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/json-schema/example"
-title: "Schema for example definition provider"
-description: "JSON Schema for example definition provider"
-endpoints:
-  structures:
-    $$inherit: "/entrytypes/structures"
-  smell:
-    $$inherit: "/entrytypes/smell"

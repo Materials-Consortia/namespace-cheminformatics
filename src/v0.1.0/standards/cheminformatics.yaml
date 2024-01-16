@@ -1,7 +1,7 @@
 $$schema: "https://schemas.optimade.org/meta/v1.2/optimade/standard_definition"
 $id: "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/standards/cheminformatics"
-title: "Definition provider cheminformatics  standard"
-description: "Definition provider cheminformatics  standard"
+title: "Standard defined by the cheminformatics definition provider"
+description: "Standard defined by the cheminformatics definition provider"
 x-optimade-definition:
   label: "cheminformatics_standard"
   kind: "standard"
@@ -11,9 +11,5 @@ x-optimade-definition:
 entrytypes:
   structures:
     $$inherit: "/entrytypes/structures"
-    x-optimade-requirements:
-      support: "must"
-  smell:
-    $$inherit: "/entrytypes/smell"
     x-optimade-requirements:
       support: "may"
