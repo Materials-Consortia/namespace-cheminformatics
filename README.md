@@ -7,6 +7,10 @@ Repository for the cheminformatics namespace.
    ```
    git clone --recurse-submodules https://github.com/Materials-Consortia/namespace-cheminformatics.git
    ```
+   Or, if you have already cloned this repo without the submodules, init them with:
+   ```
+   git submodule update --init --recursive
+   ```
 
 2. Run make.
 
