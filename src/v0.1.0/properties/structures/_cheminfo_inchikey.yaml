@@ -1,0 +1,19 @@
+$$schema: "https://schemas.optimade.org/meta/v1.2/optimade/property_definition"
+$id: "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_inchikey"
+title: "The standard InChIKey identifier of the structure, as laid out by the InChI Trust"
+x-optimade-type: "string"
+x-optimade-definition:
+  kind: "property"
+  version: "0.1.0"
+  format: "1.2"
+  name: "_cheminfo_inchikey"
+  label: "_cheminfo_inchikey_structures"
+type:
+  - "string"
+  - "null"
+description: |-
+  The standard InChIKey identifier of the structure, as laid out by the `InChI Trust (https://www.inchi-trust.org).
+  Standard InChIKey is non-unique, thus the same InChIKey can be assigned to several different structures.
+examples:
+  - "BQJCRHHNABKAKU-KBQPJGBKSA-N"
+x-optimade-unit: "inapplicable"
