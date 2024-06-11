@@ -1,13 +1,13 @@
 $$schema: "https://schemas.optimade.org/meta/v1.2/optimade/property_definition"
-$id: "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_inchikey"
+$id: "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_stdinchikey"
 title: "The standard InChIKey identifier of the structure, as laid out by the InChI Trust"
 x-optimade-type: "string"
 x-optimade-definition:
   kind: "property"
   version: "0.1.0"
   format: "1.2"
-  name: "_cheminfo_inchikey"
-  label: "_cheminfo_inchikey_structures"
+  name: "_cheminfo_stdinchikey"
+  label: "_cheminfo_stdinchikey_structures"
 type:
   - "string"
   - "null"
