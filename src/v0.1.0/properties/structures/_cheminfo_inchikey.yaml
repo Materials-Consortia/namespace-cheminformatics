@@ -14,6 +14,7 @@ type:
 description: |-
   An InChIKey identifier of the structure as defined by the InChI Trust (https://www.inchi-trust.org).
   It can be any InChIKey: not necessary a Standard InChIKey, but can also be the latter.
+  InChIKey is not guaranteed to be unique and in extremely rare cases the same InChIKey may be assigned to several different structures.
 examples:
   - "QZAYGJVTTNCVMB-UHFFFAOYSA-N"
   - "QZAYGJVTTNCVMB-UHFFFAOYNA-N"
