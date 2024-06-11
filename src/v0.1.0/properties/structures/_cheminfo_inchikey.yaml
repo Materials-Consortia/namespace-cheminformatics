@@ -13,7 +13,7 @@ type:
   - "null"
 description: |-
   The standard InChIKey identifier of the structure, as laid out by the InChI Trust (https://www.inchi-trust.org).
-  Standard InChIKey is non-unique, thus the same InChIKey can be assigned to several different structures.
+  Standard InChIKey is not guaranteed to be unique and in extremely rare cases the same InChIKey may be assigned to several different structures.
 examples:
   - "BQJCRHHNABKAKU-KBQPJGBKSA-N"
 x-optimade-unit: "inapplicable"
