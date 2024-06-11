@@ -13,7 +13,7 @@ type:
   - "null"
 description: |-
   An InChIKey identifier of the structure as defined by the InChI Trust (https://www.inchi-trust.org).
-  It can be any InChIKey: not necessary a Standard InChIKey, but can also be the latter.
+  It may be any type of InChIKey, including the Standard InChIKey.
 examples:
   - "QZAYGJVTTNCVMB-UHFFFAOYSA-N"
   - "QZAYGJVTTNCVMB-UHFFFAOYNA-N"
