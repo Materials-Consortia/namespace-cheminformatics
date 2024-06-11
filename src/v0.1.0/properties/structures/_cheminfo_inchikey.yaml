@@ -16,4 +16,5 @@ description: |-
   It can be any InChIKey: not necessary a Standard InChIKey, but can also be the latter.
 examples:
   - "QZAYGJVTTNCVMB-UHFFFAOYSA-N"
+  - "QZAYGJVTTNCVMB-UHFFFAOYNA-N"
 x-optimade-unit: "inapplicable"
