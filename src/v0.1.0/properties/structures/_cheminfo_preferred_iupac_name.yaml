@@ -13,7 +13,7 @@ type:
   - "null"
 description: |-
   A unique name for a chemical compound defined according to the rules of Preferred IUPAC Names (PINs).
-  The rules for PINs are laid out in "Nomenclature of Organic Chemistry. IUPAC Recommendations and Preferred Names 2013", also known as the Blue Book (https://iupac.qmul.ac.uk/BlueBook/).
+  The rules for PINs are provided in "Nomenclature of Organic Chemistry. IUPAC Recommendations and Preferred Names 2013", also known as the Blue Book (https://iupac.qmul.ac.uk/BlueBook/).
   Usage of the Blue Book version 3 (2023-12-06) is RECOMMENDED.
 examples:
   - "1-ethoxypropane"
