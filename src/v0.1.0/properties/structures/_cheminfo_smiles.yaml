@@ -1,0 +1,18 @@
+$$schema: "https://schemas.optimade.org/meta/v1.2/optimade/property_definition"
+$id: "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_smiles"
+title: "SMILES"
+x-optimade-type: "string"
+x-optimade-definition:
+  kind: "property"
+  version: "0.1.0"
+  format: "1.2"
+  name: "_cheminfo_smiles"
+  label: "_cheminfo_smiles_structures"
+type:
+  - "string"
+  - "null"
+description: |-
+  SMILES string describing a chemical compound.
+examples:
+  - "c1ccccc1"
+x-optimade-unit: "inapplicable"

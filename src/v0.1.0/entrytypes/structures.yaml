@@ -23,6 +23,13 @@ properties:
       sortable: false
       query-support: "none"
       response-level: "yes"
+  _cheminfo_smiles:
+    $$inherit: "/properties/structures/_cheminfo_smiles"
+    x-optimade-implementation:
+      support: "may"
+      sortable: false
+      query-support: "none"
+      response-level: "yes"
   _cheminfo_stdinchikey:
     $$inherit: "/properties/structures/_cheminfo_stdinchikey"
     x-optimade-implementation:
