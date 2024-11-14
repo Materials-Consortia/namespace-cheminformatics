@@ -1,6 +1,6 @@
 $$schema: "https://schemas.optimade.org/meta/v1.2/optimade/property_definition"
 $id: "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_smiles"
-title: "SMILES"
+title: "SMILES (Simplified Molecular Input Line Entry Specification) representation of the structure"
 x-optimade-type: "string"
 x-optimade-definition:
   kind: "property"
