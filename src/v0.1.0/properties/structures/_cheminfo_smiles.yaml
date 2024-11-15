@@ -20,4 +20,23 @@ description: |-
 examples:
   - "c1ccccc1"
   - "CN1C=NC2=C1C(=O)N(C(=O)N2C)C"
+x-optimade-metadata-definition:
+  title: "Metadata for the _cheminfo_smiles field"
+  description: "This dictionary contains the per-entry metadata for the _cheminfo_smiles field."
+  x-optimade-type: "dictionary"
+  x-optimade-unit: "inapplicable"
+  type:
+    - "object"
+    - "null"
+  properties:
+    _cheminfo_standard:
+      description: |-
+        A name of a standard the given SMILES string conforms to.
+      examples:
+        - "OpenSMILES"
+        - "IUPAC SMILES+"
+      x-optimade-type:
+        - "string"
+        - "null"
+      x-optimade-unit: "inapplicable"
 x-optimade-unit: "inapplicable"
