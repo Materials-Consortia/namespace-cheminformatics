@@ -28,15 +28,20 @@ x-optimade-metadata-definition:
     - "object"
     - "null"
   properties:
-    _cheminfo_standard:
+    _cheminfo_standard_name:
       description: |-
         A name of the standard the given SMILES string conforms to.
+        Takes value from an enumerator containing: 'IUPAC SMILES+' (https://github.com/IUPAC/IUPAC_SMILES_plus), 'OpenSMILES' (http://opensmiles.org/opensmiles.html) and 'other' (none of the above).
       x-optimade-type: "string"
       type:
         - "string"
-      examples:
-        - "OpenSMILES"
+      enum:
         - "IUPAC SMILES+"
+        - "OpenSMILES"
+        - "other"
+      examples:
+        - "IUPAC SMILES+"
+        - "OpenSMILES"
       x-optimade-unit: "inapplicable"
   x-optimade-unit: "inapplicable"
 x-optimade-unit: "inapplicable"
