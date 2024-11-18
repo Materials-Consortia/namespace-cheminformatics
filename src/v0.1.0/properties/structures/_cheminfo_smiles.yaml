@@ -43,10 +43,21 @@ x-optimade-metadata-definition:
         - "IUPAC SMILES+"
         - "OpenSMILES"
       x-optimade-unit: "inapplicable"
+    _cheminfo_standard_name_other:
+      description: |-
+        A name of the standard the given SMILES string conforms to, if different from the enumerator values for '_cheminfo_standard_name'.
+      x-optimade-type: "string"
+      type:
+        - "string"
+      examples:
+        - "Daylight"
+        - "OpenBabel"
+      x-optimade-unit: "inapplicable"
     _cheminfo_standard_version:
       description: |-
         The version of the SMILES standard given in '_cheminfo_standard_name'.
         MUST NOT contain the initial 'v' or 'V'.
+        If '_cheminfo_standard_name_other' contains the name of a software library used to generate SMILES, '_cheminfo_standard_version' MUST be the version of this software library.
       x-optimade-type: "string"
       type:
         - "string"
