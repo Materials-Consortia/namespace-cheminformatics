@@ -31,7 +31,7 @@ x-optimade-metadata-definition:
   properties:
     _cheminfo_standard:
       description: |-
-        A name of a standard the given SMILES string conforms to.
+        A name of the standard the given SMILES string conforms to.
       examples:
         - "OpenSMILES"
         - "IUPAC SMILES+"
