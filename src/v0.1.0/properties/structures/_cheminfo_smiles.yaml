@@ -24,7 +24,6 @@ x-optimade-metadata-definition:
   title: "Metadata for the _cheminfo_smiles field"
   description: "This dictionary contains the per-entry metadata for the _cheminfo_smiles field."
   x-optimade-type: "dictionary"
-  x-optimade-unit: "inapplicable"
   type:
     - "object"
     - "null"
@@ -32,11 +31,12 @@ x-optimade-metadata-definition:
     _cheminfo_standard:
       description: |-
         A name of the standard the given SMILES string conforms to.
+      x-optimade-type: "string"
+      type:
+        - "string"
       examples:
         - "OpenSMILES"
         - "IUPAC SMILES+"
-      x-optimade-type:
-        - "string"
-        - "null"
       x-optimade-unit: "inapplicable"
+  x-optimade-unit: "inapplicable"
 x-optimade-unit: "inapplicable"
