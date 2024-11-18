@@ -31,7 +31,7 @@ x-optimade-metadata-definition:
     _cheminfo_standard_name:
       description: |-
         A name of the standard the given SMILES string conforms to.
-        Takes value from an enumerator containing: 'IUPAC SMILES+' (https://github.com/IUPAC/IUPAC_SMILES_plus), 'OpenSMILES' (http://opensmiles.org/opensmiles.html) and 'other' (none of the above).
+        Takes value from an enumeration set containing 'IUPAC SMILES+' (https://github.com/IUPAC/IUPAC_SMILES_plus), 'OpenSMILES' (http://opensmiles.org/opensmiles.html) and 'other' (none of the above).
       x-optimade-type: "string"
       type:
         - "string"
