@@ -13,7 +13,7 @@ type:
   - "null"
 description: |-
   The standard InChI identifier of the structure as defined by the InChI Trust (https://www.inchi-trust.org).
-  The value MUST start with `InChI=1S/`.
+  The value MUST start with `InChI=`.
 examples:
   - "InChI=1S/C10H12N2O/c11-4-3-7-6-12-10-2-1-8(13)5-9(7)10/h1-2,5-6,12-13H,3-4,11H2"
 x-optimade-metadata-definition:
@@ -26,7 +26,7 @@ x-optimade-metadata-definition:
   properties:
     _cheminfo_library_version:
       description: |-
-        The version of the InChI software library used to generate this standard InChI value.
+        The version of the InChI software library (https://github.com/IUPAC-InChI/InChI) used to generate this standard InChI value.
         MUST NOT start with 'v'.
       x-optimade-type: "string"
       type:
