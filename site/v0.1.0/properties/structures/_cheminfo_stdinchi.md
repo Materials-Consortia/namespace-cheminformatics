@@ -1,0 +1,69 @@
+# The standard InChI identifier of the structure as defined by the InChI Trust (property)
+
+This page documents an [OPTIMADE](https://www.optimade.org/) [Property Definition](https://schemas.optimade.org/#definitions). See [https://schemas.optimade.org/](https://schemas.optimade.org/) for more information.
+
+**ID: [`https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_stdinchi`](https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_stdinchi.md)**  
+**Definition name:** `_cheminfo_stdinchi`
+
+**Property name:** The standard InChI identifier of the structure as defined by the InChI Trust  
+**Description:** The standard InChI identifier of the structure as defined by the InChI Trust (https://www.inchi-trust.org).
+The value MUST start with `InChI=`.  
+**Type:** string  
+
+
+
+**Examples:**
+
+- `InChI=1S/C10H12N2O/c11-4-3-7-6-12-10-2-1-8(13)5-9(7)10/h1-2,5-6,12-13H,3-4,11H2`
+
+**Formats:** [[JSON](_cheminfo_stdinchi.json)] [[MD](_cheminfo_stdinchi.md)]
+
+**JSON definition:**
+
+``` json
+{
+    "$id": "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_stdinchi",
+    "$schema": "https://schemas.optimade.org/meta/v1.2/optimade/property_definition.json",
+    "title": "The standard InChI identifier of the structure as defined by the InChI Trust",
+    "x-optimade-type": "string",
+    "x-optimade-definition": {
+        "kind": "property",
+        "version": "0.1.0",
+        "format": "1.2",
+        "name": "_cheminfo_stdinchi",
+        "label": "_cheminfo_stdinchi_structures"
+    },
+    "type": [
+        "string",
+        "null"
+    ],
+    "description": "The standard InChI identifier of the structure as defined by the InChI Trust (https://www.inchi-trust.org).\nThe value MUST start with `InChI=`.",
+    "examples": [
+        "InChI=1S/C10H12N2O/c11-4-3-7-6-12-10-2-1-8(13)5-9(7)10/h1-2,5-6,12-13H,3-4,11H2"
+    ],
+    "x-optimade-metadata-definition": {
+        "title": "Metadata for the _cheminfo_stdinchi field",
+        "description": "This dictionary contains the per-entry metadata for the _cheminfo_stdinchi field.",
+        "x-optimade-type": "dictionary",
+        "type": [
+            "object",
+            "null"
+        ],
+        "properties": {
+            "_cheminfo_library_version": {
+                "description": "The version of the InChI software library (https://github.com/IUPAC-InChI/InChI) used to generate this standard InChI value.\nMUST NOT start with 'v'.",
+                "x-optimade-type": "string",
+                "type": [
+                    "string"
+                ],
+                "examples": [
+                    "1.07.4"
+                ],
+                "x-optimade-unit": "inapplicable"
+            }
+        },
+        "x-optimade-unit": "inapplicable"
+    },
+    "x-optimade-unit": "inapplicable"
+}
+```

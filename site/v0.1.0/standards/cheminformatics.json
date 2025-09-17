@@ -1,0 +1,197 @@
+{
+    "$id": "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/standards/cheminformatics",
+    "$schema": "https://schemas.optimade.org/meta/v1.2/optimade/standard_definition.json",
+    "title": "Standard defined by the cheminformatics definition provider",
+    "description": "Standard defined by the cheminformatics definition provider",
+    "x-optimade-definition": {
+        "label": "cheminformatics_standard",
+        "kind": "standard",
+        "format": "1.2",
+        "version": "0.1.0",
+        "name": "cheminformatics"
+    },
+    "entrytypes": {
+        "structures": {
+            "$id": "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/entrytypes/structures",
+            "x-optimade-requirements": {
+                "support": "may"
+            },
+            "type": "object",
+            "title": "Additional properties for structure endpoint defined by cheminformatics definition provider",
+            "x-optimade-definition": {
+                "kind": "entrytype",
+                "format": "1.2",
+                "version": "0.1.0",
+                "name": "structures",
+                "label": "structures_entrytype_cheminformatics"
+            },
+            "properties": {
+                "_cheminfo_inchikey": {
+                    "$id": "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_inchikey",
+                    "x-optimade-implementation": {
+                        "sortable": false,
+                        "query-support": "none",
+                        "response-level": "yes"
+                    },
+                    "title": "InChIKey identifier of the structure as defined by the InChI Trust",
+                    "x-optimade-type": "string",
+                    "x-optimade-definition": {
+                        "kind": "property",
+                        "version": "0.1.0",
+                        "format": "1.2",
+                        "name": "_cheminfo_inchikey",
+                        "label": "_cheminfo_inchikey_structures"
+                    },
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "An InChIKey identifier of the structure as defined by the InChI Trust (https://www.inchi-trust.org).\nIt may be any type of InChIKey, including the Standard InChIKey.\nInChIKey is not guaranteed to be unique and in extremely rare cases the same InChIKey may be assigned to several different structures.",
+                    "examples": [
+                        "QZAYGJVTTNCVMB-UHFFFAOYSA-N",
+                        "QZAYGJVTTNCVMB-UHFFFAOYNA-N"
+                    ],
+                    "x-optimade-unit": "inapplicable"
+                },
+                "_cheminfo_preferred_iupac_name": {
+                    "$id": "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_preferred_iupac_name",
+                    "x-optimade-implementation": {
+                        "sortable": false,
+                        "query-support": "none",
+                        "response-level": "yes"
+                    },
+                    "title": "Preferred IUPAC name",
+                    "x-optimade-type": "string",
+                    "x-optimade-definition": {
+                        "kind": "property",
+                        "version": "0.1.0",
+                        "format": "1.2",
+                        "name": "_cheminfo_preferred_iupac_name",
+                        "label": "_cheminfo_preferred_iupac_name_structures"
+                    },
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "A unique name for a chemical compound defined according to the rules of Preferred IUPAC Names (PINs).\nThe rules for PINs are provided in \"Nomenclature of Organic Chemistry. IUPAC Recommendations and Preferred Names 2013\", also known as the Blue Book (https://iupac.qmul.ac.uk/BlueBook/).\nUsage of the Blue Book version 3 (2023-12-06) is RECOMMENDED.",
+                    "examples": [
+                        "1-ethoxypropane",
+                        "2,5,8,11-tetraoxatridecane",
+                        "7,7-dimethylbicyclo[2.2.1]heptane"
+                    ],
+                    "x-optimade-unit": "inapplicable"
+                },
+                "_cheminfo_stdinchi": {
+                    "$id": "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_stdinchi",
+                    "x-optimade-implementation": {
+                        "sortable": false,
+                        "query-support": "none",
+                        "response-level": "yes"
+                    },
+                    "title": "The standard InChI identifier of the structure as defined by the InChI Trust",
+                    "x-optimade-type": "string",
+                    "x-optimade-definition": {
+                        "kind": "property",
+                        "version": "0.1.0",
+                        "format": "1.2",
+                        "name": "_cheminfo_stdinchi",
+                        "label": "_cheminfo_stdinchi_structures"
+                    },
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "The standard InChI identifier of the structure as defined by the InChI Trust (https://www.inchi-trust.org).\nThe value MUST start with `InChI=`.",
+                    "examples": [
+                        "InChI=1S/C10H12N2O/c11-4-3-7-6-12-10-2-1-8(13)5-9(7)10/h1-2,5-6,12-13H,3-4,11H2"
+                    ],
+                    "x-optimade-metadata-definition": {
+                        "title": "Metadata for the _cheminfo_stdinchi field",
+                        "description": "This dictionary contains the per-entry metadata for the _cheminfo_stdinchi field.",
+                        "x-optimade-type": "dictionary",
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "properties": {
+                            "_cheminfo_library_version": {
+                                "description": "The version of the InChI software library (https://github.com/IUPAC-InChI/InChI) used to generate this standard InChI value.\nMUST NOT start with 'v'.",
+                                "x-optimade-type": "string",
+                                "type": [
+                                    "string"
+                                ],
+                                "examples": [
+                                    "1.07.4"
+                                ],
+                                "x-optimade-unit": "inapplicable"
+                            }
+                        },
+                        "x-optimade-unit": "inapplicable"
+                    },
+                    "x-optimade-unit": "inapplicable"
+                },
+                "_cheminfo_stdinchikey": {
+                    "$id": "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_stdinchikey",
+                    "x-optimade-implementation": {
+                        "sortable": false,
+                        "query-support": "none",
+                        "response-level": "yes"
+                    },
+                    "title": "The standard InChIKey identifier of the structure as defined by the InChI Trust",
+                    "x-optimade-type": "string",
+                    "x-optimade-definition": {
+                        "kind": "property",
+                        "version": "0.1.0",
+                        "format": "1.2",
+                        "name": "_cheminfo_stdinchikey",
+                        "label": "_cheminfo_stdinchikey_structures"
+                    },
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "The standard InChIKey identifier of the structure as defined by the InChI Trust (https://www.inchi-trust.org).\nA standard InChIKey is not guaranteed to be unique and in extremely rare cases the same InChIKey may be assigned to several different structures.",
+                    "examples": [
+                        "QZAYGJVTTNCVMB-UHFFFAOYSA-N"
+                    ],
+                    "x-optimade-unit": "inapplicable"
+                },
+                "_cheminfo_smarts_query": {
+                    "$id": "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_smarts_query",
+                    "x-optimade-implementation": {
+                        "sortable": false,
+                        "query-support": "partial",
+                        "query-support-operators": [
+                            "CONTAINS"
+                        ],
+                        "response-level": "no"
+                    },
+                    "x-optimade-requirements": {
+                        "support": "may",
+                        "response-level": "must not"
+                    },
+                    "title": "A chemical substructure query in the SMARTS language",
+                    "x-optimade-type": "string",
+                    "x-optimade-definition": {
+                        "kind": "property",
+                        "version": "0.1.0",
+                        "format": "1.2",
+                        "name": "_cheminfo_smarts_query",
+                        "label": "_cheminfo_smarts_query"
+                    },
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "A property used to specify chemical substructure queries in the SMILES Arbitrary Target Specification (SMARTS) language, defined in the Daylight SMARTS documentation (https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html).\nThis property is not intended to be stored or returned by the API, but rather to be used in queries to search for structures containing a specified substructure via the `CONTAINS` operator.",
+                    "examples": [
+                        "C(=O)O.OCC>>C(=O)OCC.O",
+                        "[$([NH2][CX4]),$([NH]([CX4])[CX4]),$([NX3]([CX4])([CX4])[CX4])]",
+                        "[$([OH][C,S,P]=O),$([nH]1nnnc1)]"
+                    ],
+                    "x-optimade-unit": "inapplicable"
+                }
+            }
+        }
+    }
+}
