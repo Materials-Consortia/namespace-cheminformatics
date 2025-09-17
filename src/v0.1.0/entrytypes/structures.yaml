@@ -33,3 +33,14 @@ properties:
       sortable: false
       query-support: "none"
       response-level: "yes"
+  _cheminfo_smarts_query:
+    $$inherit: "/properties/structures/_cheminfo_smarts_query"
+    x-optimade-implementation:
+      sortable: false
+      query-support: "partial"
+      query-support-operators:
+        - "CONTAINS"
+      response-level: "no"
+    x-optimade-requirements:
+      support: "may"
+      response-level: "must not"
