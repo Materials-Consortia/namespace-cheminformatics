@@ -9,6 +9,7 @@ x-optimade-definition:
   name: "_cheminfo_smarts_query"
   label: "_cheminfo_smarts_query"
 type:
+  - "string"
   - "null"
 description: |-
   A property used to specify chemical substructure queries in the SMILES Arbitrary Target Specification (SMARTS) language, defined in the Daylight SMARTS documentation (https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html).
