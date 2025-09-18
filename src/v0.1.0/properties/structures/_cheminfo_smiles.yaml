@@ -36,6 +36,7 @@ x-optimade-metadata-definition:
       description: |-
         A name of the specification the given SMILES string conforms to.
         Takes value from an enumeration set containing 'IUPAC SMILES+' (https://github.com/IUPAC/IUPAC_SMILES_plus), 'OpenSMILES' (http://opensmiles.org/opensmiles.html) and 'other' (none of the above).
+        If 'other' is chosen, the specification MUST be specified in metadata property '_cheminfo_specification_name_other'.
       x-optimade-type: "string"
       type:
         - "string"
@@ -50,7 +51,7 @@ x-optimade-metadata-definition:
       x-optimade-unit: "inapplicable"
     _cheminfo_specification_name_other:
       description: |-
-        A name of the specification the given SMILES string conforms to, if different from the enumerator values for '_cheminfo_specification_name'.
+        A name of the specification the given SMILES string conforms to, if different from the enumerator values for metadata property '_cheminfo_specification_name'.
         MUST be defined (non-NULL) if and only if the value for '_cheminfo_specification_name' is known and is equal to 'other'.
       x-optimade-type: "string"
       type:
@@ -62,7 +63,7 @@ x-optimade-metadata-definition:
       x-optimade-unit: "inapplicable"
     _cheminfo_specification_version:
       description: |-
-        The version of the SMILES specification given in '_cheminfo_specification_name'.
+        The version of the SMILES specification given in metadata property '_cheminfo_specification_name'.
         If '_cheminfo_specification_name_other' contains the name of a software library used to generate SMILES, '_cheminfo_specification_version' MUST be the version of this software library.
       x-optimade-type: "string"
       type:
