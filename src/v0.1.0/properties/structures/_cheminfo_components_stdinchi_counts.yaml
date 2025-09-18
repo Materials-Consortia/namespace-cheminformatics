@@ -14,10 +14,8 @@ type:
 x-optimade-dimensions:
   names: ["dim__cheminfo_components_stdinchi"]
 description: |-
-  The standard InChI identifiers for the connected components of the structure.
-  The InChI identifier is defined by the InChI Trust (https://www.inchi-trust.org).
-  Every connected component in the structure MUST be represented by a separate InChI string in the list.
-  Values MUST start with `InChI=` and MUST be unique.
+  The occurrence count of the connected components in the structure as given in '_cheminfo_components_stdinchi' property.
+  It MUST be a list of length equal to the length of '_cheminfo_components_stdinchi'.
 examples:
   - [1, 1]
   - [2, 10]
