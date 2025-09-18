@@ -12,17 +12,15 @@ properties:
   _cheminfo_inchikey:
     $$inherit: "/properties/structures/_cheminfo_inchikey"
     x-optimade-implementation:
-      support: "may"
       sortable: false
       query-support: "none"
-      response-level: "yes"
+      response-default: true
   _cheminfo_preferred_iupac_name:
     $$inherit: "/properties/structures/_cheminfo_preferred_iupac_name"
     x-optimade-implementation:
-      support: "may"
       sortable: false
       query-support: "none"
-      response-level: "yes"
+      response-default: true
   _cheminfo_smiles:
     $$inherit: "/properties/structures/_cheminfo_smiles"
     x-optimade-implementation:
@@ -32,14 +30,12 @@ properties:
   _cheminfo_stdinchi:
     $$inherit: "/properties/structures/_cheminfo_stdinchi"
     x-optimade-implementation:
-      support: "may"
       sortable: false
       query-support: "none"
-      response-level: "yes"
+      response-default: true
   _cheminfo_stdinchikey:
     $$inherit: "/properties/structures/_cheminfo_stdinchikey"
     x-optimade-implementation:
-      support: "may"
       sortable: false
       query-support: "none"
-      response-level: "yes"
+      response-default: true
