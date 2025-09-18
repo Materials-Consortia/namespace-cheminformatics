@@ -19,6 +19,7 @@ description: |-
   In the filtering context, this field behaves differently to a normal string.
   Firstly, this property can be used with the `CONTAINS` operator to provide a substructure query using the SMILES Arbitrary Target Specification (SMARTS) language defined in the Daylight SMARTS documentation (https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html).
   Secondly, exact matches using the `=` operator have additional semantics that allow a server to canonicalize the SMILES value before performing the exact match comparison, i.e., a server implementation SHOULD attempt to convert a user query for an exact SMILES match into the particular SMILES format used by the database, whereupon it can return entries that have SMILES data that matches at the semantic rather than lexical level.
+  Finally, `IS KNOWN` and `IS UNKNOWN` operators MAY be used to filter entries having non-`null` and `null` values of this property, accordingly.
 examples:
   - "c1ccccc1"
   - "CN1C=NC2=C1C(=O)N(C(=O)N2C)C"
