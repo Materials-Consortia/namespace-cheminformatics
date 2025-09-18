@@ -19,6 +19,7 @@ description: |-
 examples:
   - [1, 1]
   - [2, 10]
+  - [1, 0.5]
 x-optimade-unit: "inapplicable"
 items:
   type:
