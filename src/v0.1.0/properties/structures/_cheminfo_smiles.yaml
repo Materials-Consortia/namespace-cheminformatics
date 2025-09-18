@@ -51,6 +51,7 @@ x-optimade-metadata-definition:
     _cheminfo_specification_name_other:
       description: |-
         A name of the specification the given SMILES string conforms to, if different from the enumerator values for '_cheminfo_specification_name'.
+        MUST be defined (non-NULL) if and only if the value for '_cheminfo_specification_name' is known and is equal to 'other'.
       x-optimade-type: "string"
       type:
         - "string"
