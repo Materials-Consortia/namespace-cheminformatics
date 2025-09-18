@@ -15,6 +15,11 @@ description: |-
   SMILES (Simplified Molecular Input Line Entry System) representation of the structure.
   Providers MAY canonicalize (i.e., use rules to establish the stable order of atoms) the produced SMILES representations, but this is not mandatory and no particular set of rules is recommended.
   Generally, providers SHOULD NOT change the representation more frequently than the structure itself is modified.
+
+  In the filtering context, this field behaves differently to a normal string.
+  Firstly, this property can be used with the `CONTAINS` operator to provide a substructure query using the  SMILES Arbitrary Target Specification (SMARTS) language defined in the Daylight SMARTS documentation (https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html).
+  Secondly, exact matches using the `=` operator have additional semantics that allow a server to canonicalize the SMILES value before performing the exact match comparison, i.e., a server implementation SHOULD attempt to convert a user query for an exact SMILES match into the particular SMILES format used by the database, whereupon it can return entries that have SMILES data that matches at the semantic rather than lexical level.
+
 examples:
   - "c1ccccc1"
   - "CN1C=NC2=C1C(=O)N(C(=O)N2C)C"
