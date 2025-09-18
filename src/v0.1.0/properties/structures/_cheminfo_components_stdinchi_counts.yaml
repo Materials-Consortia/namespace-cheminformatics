@@ -1,0 +1,28 @@
+$$schema: "https://schemas.optimade.org/meta/v1.2/optimade/property_definition"
+$id: "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_components_stdinchi_counts"
+title: "The counts of connected components of the structure as expressed in '_cheminfo_components_stdinchi' property"
+x-optimade-type: "list"
+x-optimade-definition:
+  kind: "property"
+  version: "0.1.0"
+  format: "1.2"
+  name: "_cheminfo_components_stdinchi_counts"
+  label: "_cheminfo_components_stdinchi_counts_structures"
+type:
+  - "array"
+x-optimade-dimensions:
+  names: ["dim__cheminfo_components_stdinchi"]
+description: |-
+  The standard InChI identifiers for the connected components of the structure.
+  The InChI identifier is defined by the InChI Trust (https://www.inchi-trust.org).
+  Every connected component in the structure MUST be represented by a separate InChI string in the list.
+  Values MUST start with `InChI=` and MUST be unique.
+examples:
+  - [1, 1]
+  - [2, 10]
+x-optimade-unit: "inapplicable"
+items:
+  type:
+    - "number"
+  x-optimade-type: "float"
+  x-optimade-unit: "dimensionless"
