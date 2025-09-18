@@ -10,6 +10,7 @@ x-optimade-definition:
   label: "_cheminfo_components_stdinchi_structures"
 type:
   - "array"
+  - "null"
 x-optimade-dimensions:
   names: ["dim__cheminfo_components_stdinchi"]
 description: |-
