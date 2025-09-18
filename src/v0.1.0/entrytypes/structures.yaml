@@ -9,6 +9,13 @@ x-optimade-definition:
   name: "structures"
   label: "structures_entrytype_cheminformatics"
 properties:
+  _cheminfo_components_stdinchi:
+    $$inherit: "/properties/structures/_cheminfo_components_stdinchi"
+    x-optimade-implementation:
+      support: "may"
+      sortable: false
+      query-support: "none"
+      response-level: "yes"
   _cheminfo_inchikey:
     $$inherit: "/properties/structures/_cheminfo_inchikey"
     x-optimade-implementation:
