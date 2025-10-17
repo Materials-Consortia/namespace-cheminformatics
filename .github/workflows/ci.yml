@@ -1,0 +1,41 @@
+name: CI tests
+
+on:
+  pull_request:
+  push:
+    branches:
+    - main
+
+env:
+  PYTEST_ADDOPTS: "--color=yes"
+  LINTING_PY_VERSION: "3.10"  # The version of Python to use for linting (typically the minimum supported)
+
+# Cancel running workflows when additional changes are pushed
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-a-fallback-value
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+
+  make-schemas:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v5
+      with:
+        submodules: true
+
+    - name: Set up Python ${{ env.LINTING_PY_VERSION }}
+      uses: actions/setup-python@v6
+      with:
+        python-version: ${{ env.LINTING_PY_VERSION }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -U setuptools wheel
+        pip install -r dependencies/submodules/optimade-property-tools/requirements.txt
+
+    - name: Make schemas
+      run: make schemas_html_pretty=true schemas_html_ext=true
