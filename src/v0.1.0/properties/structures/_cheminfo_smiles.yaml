@@ -1,0 +1,77 @@
+$$schema: "https://schemas.optimade.org/meta/v1.2/optimade/property_definition"
+$id: "https://schemas.optimade.org/namespaces/cheminformatics/v0.1/properties/structures/_cheminfo_smiles"
+title: "SMILES (Simplified Molecular Input Line Entry System) representation of the structure"
+x-optimade-type: "_cheminfo_smiles"
+x-optimade-definition:
+  kind: "property"
+  version: "0.1.0"
+  format: "1.2"
+  name: "_cheminfo_smiles"
+  label: "_cheminfo_smiles_structures"
+type:
+  - "string"
+  - "null"
+description: |-
+  SMILES (Simplified Molecular Input Line Entry System) representation of the structure.
+  Providers MAY canonicalize (i.e., use rules to establish the stable order of atoms) the produced SMILES representations, but this is not mandatory and no particular set of rules is recommended.
+  Generally, providers SHOULD NOT change the representation more frequently than the structure itself is modified.
+
+  In the filtering context, this field behaves differently to a normal string.
+  Firstly, this property can be used with the `CONTAINS` operator to provide a substructure query using the SMILES Arbitrary Target Specification (SMARTS) language defined in the Daylight SMARTS documentation (https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html).
+  Secondly, exact matches using the `=` operator have additional semantics that allow a server to canonicalize the SMILES value before performing the exact match comparison, i.e., a server implementation SHOULD attempt to convert a user query for an exact SMILES match into the particular SMILES format used by the database, whereupon it can return entries that have SMILES data that matches at the semantic rather than lexical level.
+  Finally, `IS KNOWN` and `IS UNKNOWN` operators MAY be used to filter entries having non-`null` and `null` values of this property, accordingly.
+examples:
+  - "c1ccccc1"
+  - "CN1C=NC2=C1C(=O)N(C(=O)N2C)C"
+  - "[Na+].[Cl-]"
+x-optimade-metadata-definition:
+  title: "Metadata for the _cheminfo_smiles field"
+  description: "This dictionary contains the per-entry metadata for the _cheminfo_smiles field."
+  x-optimade-type: "dictionary"
+  type:
+    - "object"
+    - "null"
+  properties:
+    _cheminfo_specification_name:
+      description: |-
+        A name of the specification the given SMILES string conforms to.
+        Takes value from an enumeration set containing 'IUPAC SMILES+' (https://github.com/IUPAC/IUPAC_SMILES_plus), 'OpenSMILES' (http://opensmiles.org/opensmiles.html) and 'other' (none of the above).
+        If 'other' is chosen, the specification MUST be specified in metadata property '_cheminfo_specification_name_other'.
+      x-optimade-type: "string"
+      type:
+        - "string"
+        - "null"
+      enum:
+        - "IUPAC SMILES+"
+        - "OpenSMILES"
+        - "other"
+      examples:
+        - "IUPAC SMILES+"
+        - "OpenSMILES"
+      x-optimade-unit: "inapplicable"
+    _cheminfo_specification_name_other:
+      description: |-
+        A name of the specification the given SMILES string conforms to, if different from the enumerator values for metadata property '_cheminfo_specification_name'.
+        MUST be defined (non-NULL) if and only if the value for '_cheminfo_specification_name' is known and is equal to 'other'.
+      x-optimade-type: "string"
+      type:
+        - "string"
+        - "null"
+      examples:
+        - "Daylight"
+        - "OpenBabel"
+      x-optimade-unit: "inapplicable"
+    _cheminfo_specification_version:
+      description: |-
+        The version of the SMILES specification given in metadata property '_cheminfo_specification_name'.
+        If '_cheminfo_specification_name_other' contains the name of a software library used to generate SMILES, '_cheminfo_specification_version' MUST be the version of this software library.
+      x-optimade-type: "string"
+      type:
+        - "string"
+        - "null"
+      examples:
+        - "1.0"
+        - "a76e26b32e6f0d18f7dd0cadf1b23449baebb04e"
+      x-optimade-unit: "inapplicable"
+  x-optimade-unit: "inapplicable"
+x-optimade-unit: "inapplicable"
