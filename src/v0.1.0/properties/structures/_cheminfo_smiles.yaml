@@ -13,6 +13,7 @@ type:
   - "null"
 description: |-
   SMILES (Simplified Molecular Input Line Entry System) representation of the structure.
+  Property is string-valued, thus comparison operators (only '=' and '!=' are allowed) MUST compare literal strings.
   Providers MAY canonicalize (i.e., use rules to establish the stable order of atoms) the produced SMILES representations, but this is not mandatory and no particular set of rules is recommended.
   Generally, providers SHOULD NOT change the representation more frequently than the structure itself is modified.
   No particular specification (also known as flavor) for the provided SMILES strings is enforced, but if known, MUST be provided in metadata property '_cheminfo_specification_name'.
