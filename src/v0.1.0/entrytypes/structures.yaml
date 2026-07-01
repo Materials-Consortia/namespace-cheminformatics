@@ -13,7 +13,7 @@ properties:
     $$inherit: "/properties/structures/_cheminfo_preferred_iupac_name"
     x-optimade-implementation:
       sortable: false
-      query-support: "none"
+      query-support: "equality only"
       response-default: true
   _cheminfo_smiles:
     $$inherit: "/properties/structures/_cheminfo_smiles"
@@ -25,11 +25,11 @@ properties:
     $$inherit: "/properties/structures/_cheminfo_stdinchi"
     x-optimade-implementation:
       sortable: false
-      query-support: "none"
+      query-support: "equality only"
       response-default: true
   _cheminfo_stdinchikey:
     $$inherit: "/properties/structures/_cheminfo_stdinchikey"
     x-optimade-implementation:
       sortable: false
-      query-support: "none"
+      query-support: "equality only"
       response-default: true
