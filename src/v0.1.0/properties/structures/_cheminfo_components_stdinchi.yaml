@@ -12,7 +12,7 @@ type:
   - "array"
   - "null"
 x-optimade-dimensions:
-  names: ["dim__cheminfo_components_stdinchi"]
+  names: ["dim__cheminfo_components"]
 description: |-
   The standard InChI identifiers for the connected components of the structure.
   The InChI identifier is defined by the InChI Trust (https://www.inchi-trust.org).
