@@ -26,7 +26,7 @@ properties:
     x-optimade-implementation:
       sortable: false
       query-support: "partial"
-      query-support-operators: ['=', '!=', 'CONTAINS', 'IS KNOWN', 'IS UNKNOWN']
+      query-support-operators: ['=', '!=', 'IS KNOWN', 'IS UNKNOWN']
       response-default: true
   _cheminfo_stdinchi:
     $$inherit: "/properties/structures/_cheminfo_stdinchi"
