@@ -70,5 +70,16 @@ x-optimade-metadata-definition:
         - "1.0"
         - "a76e26b32e6f0d18f7dd0cadf1b23449baebb04e"
       x-optimade-unit: "inapplicable"
+    _cheminfo_special_details:
+      description: |-
+        Other details related to SMILES treatment by the provider that might need relaying.
+        For example, a provider might want to express that stereochemistry is not represented in this SMILES string.
+      x-optimade-type: "string"
+      type:
+        - "string"
+        - "null"
+      examples:
+        - "Stereochemistry is not represented"
+      x-optimade-unit: "inapplicable"
   x-optimade-unit: "inapplicable"
 x-optimade-unit: "inapplicable"
