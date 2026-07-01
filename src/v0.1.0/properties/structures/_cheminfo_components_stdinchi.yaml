@@ -26,7 +26,7 @@ description: |-
   - `["InChI=1S/ClH/h1H/p-1", "InChI=1S/Na/q+1"]`: NaCl (salt) broken into elements.
   - `["InChI=1S/C7H6O3/c8-6-4-2-1-3-5(6)7(9)10/h1-4,8H,(H,9,10)", "InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3"]`: a co-crystal of two organic compounds
 examples:
-  - ["InChI=1S/Cl", "InChI=1S/Na"]
+  - ["InChI=1S/ClH/h1H/p-1", "InChI=1S/Na/q+1"]
   - ["InChI=1S/C7H6O3/c8-6-4-2-1-3-5(6)7(9)10/h1-4,8H,(H,9,10)", "InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3"]
 x-optimade-metadata-definition:
   title: "Metadata for the _cheminfo_components_stdinchi field"
