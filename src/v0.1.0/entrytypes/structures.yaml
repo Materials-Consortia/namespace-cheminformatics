@@ -9,12 +9,6 @@ x-optimade-definition:
   name: "structures"
   label: "structures_entrytype_cheminformatics"
 properties:
-  _cheminfo_inchikey:
-    $$inherit: "/properties/structures/_cheminfo_inchikey"
-    x-optimade-implementation:
-      sortable: false
-      query-support: "equality only"
-      response-default: true
   _cheminfo_preferred_iupac_name:
     $$inherit: "/properties/structures/_cheminfo_preferred_iupac_name"
     x-optimade-implementation:
