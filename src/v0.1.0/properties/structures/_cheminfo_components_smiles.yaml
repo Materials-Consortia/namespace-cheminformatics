@@ -17,6 +17,7 @@ description: |-
   SMILES (Simplified Molecular Input Line Entry System) representation of the molecular entities of the structure.
   Molecular entities MUST NOT overlap, i.e., any atom of a structure MUST NOT appear in more than one entity.
   There MAY be atoms participating in none of the molecular entities: providers are allowed to exclude certain entities if they wish.
+  Order of the list items MUST correspond to the order in '_cheminfo_components_counts' and '_cheminfo_components_stdinchi'.
 
   **Explained examples**:
 
